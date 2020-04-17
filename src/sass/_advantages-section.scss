@@ -1,0 +1,69 @@
+.advantages-section {
+    @include flex(row, center, center);
+}
+
+.advantages-container {
+    flex: 1 1 32rem;
+    padding: 14rem 0;
+}
+
+.form-wrap-g {
+    background: url('../../src/imgs/jpg/advantages-formBG1.jpg') no-repeat;
+    background-position: cover;
+    height: 75rem;
+}
+.form-wrap {
+    padding: 10rem 5rem 0rem 24rem;
+    color: white;
+
+    b {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: $large;
+    }
+    p {
+        padding: 1.5rem 0 1.5rem 0;
+    }
+    button {
+        width: 100%;
+        border: 1px solid white;
+    }
+    input {
+        width: 100%;
+        margin: 1rem 0;
+        padding-left: 2rem;
+    }
+    label p {
+        font-weight: bold;
+    }
+}
+
+.advantages-wrap {
+    flex: 2 2 40rem;
+    h5 {
+        font-size: $large;
+        text-align: end;
+        margin-bottom: 4rem;
+        margin-right: 12rem;
+    }
+}
+.advantage-sign{
+    position: relative;
+}
+.advantage-sign::before {
+    position: absolute;
+    content: "x";
+    font-size: $largest;
+    color: $orange;
+    padding: 0 2rem;
+    top: -25%;
+    left: -18%;
+}
+
+.advantage-row {
+    @include flex(unset, space-around, unset);
+    b {
+        max-width: 40rem;
+        margin: 2rem 0;
+    }
+}

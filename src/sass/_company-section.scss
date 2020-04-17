@@ -1,0 +1,65 @@
+.counter-wrapper {
+    @include flex(row, space-around, center);
+    text-align: center;
+    padding-bottom: 12rem;
+}
+
+.counter {
+    position: relative;
+    background: linear-gradient(180deg, #ffb332 0%, #ff6501 100%);;
+    padding: 5rem;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-top: -6.8rem;
+    color:white;
+
+    b {
+        font-size: 5rem;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 65px;
+            height: 3px;
+            background: white;
+            bottom: 128px;
+            left: 50%;
+            transform: translateX(-48%);
+        }
+    }
+
+    p {
+        padding-top: 2rem;
+    }
+}
+
+
+.definition-wrapper {
+    @include flex(row, space-between, center);
+
+}
+
+.definition-list {
+    flex: 2 0 30rem;
+    h3 {
+        font-size: 4rem;
+    }
+    b {
+        font-size: 2.2rem;
+    }
+    .btn {
+        margin: 5rem 10rem;
+    }
+}
+
+.definition-block {
+    @include flex(row, flex-start, center);
+        p {
+        padding-top: 0.6rem;
+        }
+}
+.definition-img {
+    flex: 1 1 50rem;
+    img {
+        width: 100%;
+    }
+}
