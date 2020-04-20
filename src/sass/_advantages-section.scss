@@ -67,3 +67,15 @@
         margin: 2rem 0;
     }
 }
+
+.fast-advantages-wrap {
+    @include flex(row, center, center);
+    padding-top: 10rem;
+}
+
+.fast-advantage-block {
+    @include flex(column, center, center);
+    margin-left: 2rem;
+    max-width: 30rem;
+    text-align: center;
+}
