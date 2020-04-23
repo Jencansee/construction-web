@@ -7,6 +7,7 @@
     <meta name="description" content="Строительная компания «Монолит» - Построем всё!">
     <link rel="stylesheet" href="dist/styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='./dist/styles/swiper.css'>
     <title>Монолит</title>
 </head>
     <body>
@@ -99,8 +100,8 @@
             <div class="services-wrap">
                 <div class="service-block">
                         <div class="service-block-img">
-                            <img src="./src/imgs/jpg/servises-bg1.png" alt="">
-                            <img class="service-img-tech1" src="./src/imgs/jpg/services-to1.svg" alt=""> 
+                            <img src="./src/imgs/png/services-bg1.png" alt="">
+                            <img class="service-img-tech1" src="./src/imgs/svg/services-to1.svg" alt=""> 
                         </div>
                         <a href="#">Демонтаж зданий</a>
                         <div class="service-block-description">
@@ -111,8 +112,8 @@
 
                 <div class="service-block">
                     <div class="service-block-img">
-                        <img src="./src/imgs/jpg/services-bg2.svg" alt="">
-                        <img class="service-img-tech2" src="./src/imgs/jpg/services-to2.svg" alt="">
+                        <img src="./src/imgs/png/services-bg2.png" alt="">
+                        <img class="service-img-tech2" src="./src/imgs/svg/services-to2.svg" alt="">
                     </div>
                 <a href="#">Рытьё котлованов</a>
                     <div class="service-block-description">
@@ -123,7 +124,7 @@
 
                 <div class="service-block">
                     <div class="service-block-img">
-                        <img src="./src/imgs/jpg/services-bg3.svg" alt="">
+                        <img src="./src/imgs/png/services-bg3.png" alt="">
                         <img class="service-img-tech6" src="./src/imgs/svg/services-to6.svg" alt="">
                     </div>
                 <a href="#">Разработка котлованов</a>
@@ -135,7 +136,7 @@
 
                 <div class="service-block">
                     <div class="service-block-img">
-                        <img src="./src/imgs/jpg/services-bg3.svg" alt="">
+                        <img src="./src/imgs/png/services-bg4.png" alt="">
                         <img class="service-img-tech4" src="./src/imgs/svg/services-to4.svg" alt="">
                     </div>
                 <a href="#">Замещение грунтов</a>
@@ -147,7 +148,7 @@
 
                 <div class="service-block">
                     <div class="service-block-img">
-                        <img src="./src/imgs/jpg/services-bg3.svg" alt="">
+                        <img src="./src/imgs/png/services-bg5.png" alt="">
                         <img class="service-img-tech5" src="./src/imgs/svg/services-to5.svg" alt="">
                     </div>
                 <a href="#">Замещение грунтов</a>
@@ -159,8 +160,8 @@
 
                 <div class="service-block">
                     <div class="service-block-img">
-                        <img src="./src/imgs/jpg/services-bg3.svg" alt="">
-                        <img class="service-img-tech3" src="./src/imgs/jpg/services-to3.svg" alt="">
+                        <img src="./src/imgs/png/services-bg4.png" alt="">
+                        <img class="service-img-tech3" src="./src/imgs/svg/services-to3.svg" alt="">
                     </div>
                 <a href="#">Замещение грунтов</a>
                     <div class="service-block-description">
@@ -296,15 +297,111 @@
                 <button class='btn info-btn'>Полная перечень</button>
             </div>
         </section>
-        <section class="licence">
+        <section class="questions-section">
+            <div class="questions-wrap">
+            <img class="question-img" src="./src/imgs/png/question-sec2.png" alt="">
+            <div class="question-form">
+                <b>НА ВАШИ ВОПРОСЫ <br> ОТВЕТИТ СПЕЦИАЛИСТ</b>
+                <p>Оставьте свои контакты и мы перезвоним вам <br> в течении нескольких минут в рабочее время</p>
+                <form action="POST">
+                    <label for="client-name">
+                        <p>Ваше имя</p>
+                        <input id="client-name" type="text" name="client-name" placeholder="Валерий Номаконов" required>
+                    </label>
+                    <label for="client-tel">
+                        <p>Контактный номер телефона</p>
+                        <input id="client-tel" type="text" name="client-tel" placeholder="+7 (708) 000-00-10" required>
+                    </label>
+                    <button class="btn  btn--intro">
+                        <img src="./src/imgs/svg/callForm.svg" alt="">
+                        Перезвоните мне</button>
+                </form>
+            </div>
+        </div>
+        </section>
+        <section class="license-section">
             <div class="license-text">
-                <b>ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</b>
-                <p>Весь список допусков и лицензий предоставляется по обращению.</p>
+                <div class="license-text-wrap">
+                    <b>ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</b>
+                    <p>Весь список допусков и лицензий предоставляется по обращению.</p>
+                </div>
+                <div class="swiper-btns-wrap">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="swpr-wrap">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./src/imgs/jpg/license/license2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/imgs/jpg/license/license3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/imgs/jpg/license/license4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/imgs/jpg/license/license5.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/imgs/jpg/license/license6.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/imgs/jpg/license/license.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/imgs/jpg/license/license3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/imgs/jpg/license/license4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/imgs/jpg/license/license2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/imgs/jpg/license/license6.jpg" alt="">
+                        </div>
+                    </div>
+                  </div>
             </div>
         </section>
         </main>
         <footer>
-
+            <section class="payment-section">
+                <div class="payment-text-wrap">
+                    <img src="./src/imgs/png/payment-img.png" alt="">
+                    <b>РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕЙ ЗАДАЧИ</b>
+                    <p>Получите бесплатную консультацию <br> по плану работ с расчетом цены</p>
+                </div>
+                <form action="POST">
+                    <label for="client-name">
+                        <p>Ваше имя</p>
+                        <input id="client-name" type="text" name="client-name" placeholder="Филип Дик" required>
+                    </label>
+                    <label for="client-tel">
+                        <p>Контактный номер телефона</p>
+                        <input id="client-tel" type="text" name="client-tel" placeholder="+7 (708) 000-00-10" required>
+                    </label>
+                    <button class="btn  btn--intro">
+                        <img src="./src/imgs/svg/callForm.svg" alt="">
+                        Узнать стоимость</button>
+                </form>
+            </section>
         </footer>
+        <script src="./node_modules/swiper/js/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 8,
+              spaceBetween: 40,
+              slidesPerGroup: 3,
+              loop: true,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+          </script>
     </body>
 </html>

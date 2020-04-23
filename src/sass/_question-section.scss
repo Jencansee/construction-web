@@ -1,0 +1,25 @@
+.questions-wrap {
+    display: flex;
+}
+.question-img{
+    width: 72rem;
+    margin-top: -10rem;
+    margin-right: 12rem;
+    margin-left: 8rem;
+}
+.question-form {
+    @include flex(column, center, unset);
+    p {
+        padding: 2rem 0;
+    }
+    b {
+        font-size: $big;
+        margin-top: 2rem;
+    }
+    button{
+        margin: 2rem 0;
+    }
+}
+.swiper-slide {
+    flex: 1 0 18rem;
+}

@@ -1,0 +1,33 @@
+.payment-section {
+    min-height: 80vh;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url("../../src/imgs/svg/ellipse.svg");
+        
+        top: 1rem;
+        right: 1rem;
+        z-index: 10000;
+    }
+}
+
+.payment-section form {
+    @include flex(row, space-around, unset);
+}
+
+.payment-text-wrap {
+    @include flex(column, center, center);
+    b {
+        font-size: $big;
+    }
+    p {
+        text-align: center;
+    }
+    img {
+        margin-top: -5rem;
+        padding-bottom: 4rem;
+    }
+}

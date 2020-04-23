@@ -1,0 +1,48 @@
+.license-section {
+    background: $gray-bg;
+}
+.license-text{
+  @include flex(row, space-around, center);
+  padding: 8rem 0 6rem;
+  b {
+    background: $orange;
+    color: white;
+    font-size: 3rem;
+    padding: 3rem 6rem;
+    margin-right: 3rem;   
+  }
+}
+.license-text-wrap{
+  @include flex(row, space-between, center);
+}
+.swiper-btns-wrap{
+  @include flex(row, space-between, center);
+}
+
+.swiper-button-next, .swiper-button-prev {
+  @include flex(row, space-between, center);
+  cursor: pointer;
+  background: $orange;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: $big;
+  &:active{
+    background: darken($color: $orange, $amount: 15);
+  }
+}
+.swiper-button-prev{
+  margin-right: 3rem;
+}
+.swiper-container {
+    width: 80%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    @include flex(row, center, center);
+    width: 34rem !important;
+  }
+
+  .swpr-wrap {
+    padding-bottom: 14rem;
+  }
