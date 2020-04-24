@@ -375,19 +375,21 @@
                     <b>РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕЙ ЗАДАЧИ</b>
                     <p>Получите бесплатную консультацию <br> по плану работ с расчетом цены</p>
                 </div>
-                <form action="POST">
+                <div class="payment-form-wrap">
+                    <form action="POST">
                     <label for="client-name">
                         <p>Ваше имя</p>
-                        <input id="client-name" type="text" name="client-name" placeholder="Филип Дик" required>
+                        <input id="client-name" type="text" name="client-name" placeholder="Ваше имя" required>
                     </label>
                     <label for="client-tel">
                         <p>Контактный номер телефона</p>
-                        <input id="client-tel" type="text" name="client-tel" placeholder="+7 (708) 000-00-10" required>
+                        <input id="client-tel" type="text" name="client-tel" placeholder="Ваш номер телефона" required>
                     </label>
-                    <button class="btn  btn--intro">
-                        <img src="./src/imgs/svg/callForm.svg" alt="">
+                    <button class="btn  btn--intro btn--footer">
+                        <img src="./src/imgs/svg/callForm-foot.svg" alt="">
                         Узнать стоимость</button>
-                </form>
+                    </form>
+                </div>
             </section>
         </footer>
         <script src="./node_modules/swiper/js/swiper.min.js"></script>

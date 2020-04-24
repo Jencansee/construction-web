@@ -1,7 +1,5 @@
 .payment-section {
     min-height: 80vh;
-    width: 80%;
-    margin: 0 auto;
     position: relative;
     &::before{
         content: "";
@@ -14,20 +12,57 @@
     }
 }
 
+.payment-form-wrap{
+    background: url('../../src/imgs/jpg/footer-formbg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 10rem 0 5rem;
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+    label {
+        margin-right: 5rem;
+        color: white;
+        p {
+            display: none;
+        }
+    }
+}
 .payment-section form {
-    @include flex(row, space-around, unset);
+    @include flex(row, center, center);
 }
 
 .payment-text-wrap {
     @include flex(column, center, center);
     b {
         font-size: $big;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 58rem;
+            height: 0.1rem;
+            background-color:$orange;
+            bottom: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
     p {
+        padding-top: 4rem;
         text-align: center;
     }
     img {
         margin-top: -5rem;
         padding-bottom: 4rem;
     }
+}
+
+.btn--footer{
+    color: $orange;
+    background: white;
+    font-weight: bold;
+}
+.btn--footer, input {
+    border-radius: 15px;
 }
