@@ -1,12 +1,9 @@
 header {
-    min-height: 12vh;
     font-size: 3rem;
     border-bottom: 1px solid rgba(0,0,0,.1);
 }
 .header-information {
     @include flex(row, space-between, center);
-    width: 80%;
-    margin: 0 auto;
     padding: 3rem 0;
     font-weight: 500;
     

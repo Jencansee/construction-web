@@ -18,15 +18,20 @@ body {
 .btn,
 input {
   font-family: inherit;
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 4rem;
+  width: 35rem;
   font-size: 2.2rem; }
 
-.section {
-  width: 80%;
+.full-wrapper {
+  width: 100%;
+  position: relative; }
+
+.container {
+  max-width: 1340px;
+  width: 100%;
   margin: 0 auto; }
 
 .intro-section {
-  min-height: 80vh;
   background: linear-gradient(180deg, white, rgba(209, 160, 54, 0.7) 32.74%, rgba(233, 155, 11, 0.486) 100%), url("../../src/imgs/sc.png") no-repeat;
   background-position: center;
   background-size: cover; }
@@ -34,12 +39,10 @@ input {
 h2 {
   font-size: 6rem;
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 8rem;
   text-transform: uppercase; }
 
 .intro-form--wrapper {
-  width: 80%;
-  margin: 0 auto;
   font-size: 3rem;
   text-align: center; }
   .intro-form--wrapper p {
@@ -55,7 +58,8 @@ h2 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 18rem; }
 
 .btn--intro {
   display: flex;
@@ -70,8 +74,10 @@ h2 {
   .btn--intro:hover {
     box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.2), 10px 4px 20px rgba(0, 0, 0, 0.2); }
 
+.info-item .btn {
+  width: 28rem; }
+
 header {
-  min-height: 12vh;
   font-size: 3rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
@@ -81,8 +87,6 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
   padding: 3rem 0;
   font-weight: 500; }
   .header-information .item-many {
@@ -227,7 +231,8 @@ header {
   color: black;
   font-size: 1.8rem;
   border: 2px solid #ff6501;
-  transition: all ease-in-out 0.6s; }
+  transition: all ease-in-out 0.6s;
+  width: 25rem; }
   .service-btn:hover {
     color: #ff6501;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); }
@@ -275,7 +280,7 @@ header {
     .services-btn-wrap .btn:last-child::before {
       background: white; }
 
-.advantages-section {
+.advantages-section .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -284,15 +289,18 @@ header {
 
 .advantages-container {
   flex: 1 1 32rem;
-  padding: 14rem 0; }
+  padding: 14rem 0;
+  margin-left: -29rem; }
 
 .form-wrap-g {
   background: url("../../src/imgs/jpg/advantages-formBG1.jpg") no-repeat;
   background-position: cover;
-  height: 75rem; }
+  width: 76rem;
+  height: 76rem; }
 
 .form-wrap {
   padding: 10rem 5rem 0rem 24rem;
+  margin: 0 8rem 0 0;
   color: white; }
   .form-wrap b {
     text-transform: uppercase;
@@ -356,7 +364,8 @@ header {
   flex-wrap: wrap;
   margin-left: 2rem;
   max-width: 30rem;
-  text-align: center; }
+  text-align: center;
+  flex: 1 1 24rem; }
 
 .gallery-section {
   background: #e5e5e5; }
@@ -412,7 +421,7 @@ header {
 .license-text {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 8rem 0 6rem; }
@@ -420,8 +429,8 @@ header {
     background: #ff6501;
     color: white;
     font-size: 3rem;
-    padding: 3rem 6rem;
-    margin-right: 3rem; }
+    padding: 2rem 3rem;
+    margin-right: 1.5rem; }
 
 .license-text-wrap {
   display: flex;
@@ -445,18 +454,14 @@ header {
   flex-wrap: wrap;
   cursor: pointer;
   background: #ff6501;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   color: white;
   font-size: 3rem; }
   .swiper-button-next:active, .swiper-button-prev:active {
     background: #b44700; }
 
 .swiper-button-prev {
-  margin-right: 3rem; }
-
-.swiper-container {
-  width: 80%;
-  height: 100%; }
+  margin-right: 2rem; }
 
 .swiper-slide {
   display: flex;
@@ -469,21 +474,24 @@ header {
 .swpr-wrap {
   padding-bottom: 14rem; }
 
-.questions-wrap {
-  display: flex; }
+.questions-section .container {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap; }
 
 .question-img {
-  width: 72rem;
+  flex: 1 1 40rem;
+  min-width: 68rem;
   margin-top: -10rem;
-  margin-right: 12rem;
-  margin-left: 8rem; }
+  margin-right: 12rem; }
 
 .question-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: unset;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  flex: 1 1 40rem; }
   .question-form p {
     padding: 2rem 0; }
   .question-form b {
@@ -496,7 +504,6 @@ header {
   flex: 1 0 18rem; }
 
 .payment-section {
-  min-height: 80vh;
   position: relative; }
   .payment-section::before {
     content: "";
@@ -509,10 +516,7 @@ header {
 .payment-form-wrap {
   background: url("../../src/imgs/jpg/footer-formbg.jpg") no-repeat center;
   background-size: cover;
-  padding: 10rem 0 5rem; }
-  .payment-form-wrap form {
-    width: 80%;
-    margin: 0 auto; }
+  padding: 10rem 0 4rem; }
   .payment-form-wrap label {
     margin-right: 5rem;
     color: white; }
@@ -557,4 +561,101 @@ header {
   font-weight: bold; }
 
 .btn--footer, input {
-  border-radius: 15px; }
+  border-radius: 12px;
+  height: 6rem; }
+
+.footer-section {
+  background: #e5e5e5; }
+
+.footer-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 0 4rem; }
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: unset;
+  flex-wrap: wrap;
+  flex: 0 1 40rem;
+  line-height: 2; }
+  .footer-block b {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 1rem; }
+  .footer-block a {
+    color: black;
+    transition: all ease-in-out 0.4s; }
+    .footer-block a:hover {
+      color: #ffb332; }
+
+.footer-describe {
+  max-width: 38rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: #333;
+  padding-bottom: 1rem; }
+
+.small-link {
+  color: #333;
+  font-size: 1.8rem; }
+  .small-link:visited {
+    color: #333; }
+
+.footer-nav ul li {
+  list-style: none; }
+
+ul li a, .footer-tel-block a {
+  text-decoration: none; }
+
+.footer-tel-block a {
+  font-weight: bold; }
+
+.geo-footer {
+  position: relative; }
+  .geo-footer::before {
+    position: absolute;
+    content: "";
+    background: url("../../src/imgs/svg/geo-icn.svg") no-repeat;
+    position: absolute;
+    height: 3.1rem;
+    width: 2.3rem;
+    background-position: center;
+    background-size: cover;
+    left: -5px;
+    top: 0.2rem; }
+
+.geo-call {
+  position: relative; }
+  .geo-call::before {
+    position: absolute;
+    content: "";
+    background: url("../../src/imgs/svg/callForm-foot.svg") no-repeat;
+    position: absolute;
+    height: 2.3rem;
+    width: 2.3rem;
+    background-position: center;
+    background-size: cover;
+    left: -5px;
+    top: 0.2rem; }
+
+.geo-mail {
+  position: relative; }
+  .geo-mail::before {
+    position: absolute;
+    content: "";
+    background: url("../../src/imgs/svg/mail-icn.svg") no-repeat;
+    position: absolute;
+    width: 23px;
+    height: 18px;
+    background-position: center;
+    background-size: cover;
+    left: -2px;
+    top: 1rem; }
+
+.foot-block-contact a, .foot-block-contact p {
+  padding-left: 3.5rem; }

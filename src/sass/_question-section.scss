@@ -1,14 +1,17 @@
-.questions-wrap {
+.questions-section .container{
     display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 .question-img{
-    width: 72rem;
+    flex: 1 1 40rem;
+    min-width: 68rem;
     margin-top: -10rem;
     margin-right: 12rem;
-    margin-left: 8rem;
 }
 .question-form {
     @include flex(column, center, unset);
+    flex: 1 1 40rem;
     p {
         padding: 2rem 0;
     }

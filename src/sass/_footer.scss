@@ -1,0 +1,103 @@
+.footer-section{
+    background: $gray-bg;
+}
+.footer-wrap {
+    @include flex(row, space-between, flex-start);
+    padding: 2rem 0 4rem;
+}
+.footer-block {
+    @include flex(column, center, unset);
+    flex: 0 1 40rem;
+    line-height: 2;
+    b {
+        font-size: $big;
+        font-weight: 800;
+        padding-bottom: 1rem;
+    }
+    a {
+        color: black;
+        transition: all ease-in-out 0.4s;
+        &:hover{
+            color: #ffb332;   
+        }
+    }
+}
+.footer-describe {
+    max-width: 38rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    color: #333;
+    padding-bottom: 1rem;
+}
+
+.small-link {
+    color: #333;
+    font-size: 1.8rem;
+    &:visited{
+        color: #333;
+    }
+}
+.footer-nav {
+    ul li {
+        list-style:none;
+    }
+}
+
+ul li a, .footer-tel-block a {
+    text-decoration: none;
+}
+.footer-tel-block a {
+    font-weight: bold;
+}
+
+.geo-footer {
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background: url('../../src/imgs/svg/geo-icn.svg') no-repeat;
+        position: absolute;
+        height: 3.1rem;
+        width: 2.3rem;
+        background-position: center;
+        background-size: cover;
+        left: -5px;
+        top: 0.2rem;
+    }
+}
+
+.geo-call {
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background: url('../../src/imgs/svg/callForm-foot.svg') no-repeat;
+        position: absolute;
+        height: 2.3rem;
+        width: 2.3rem;
+        background-position: center;
+        background-size: cover;
+        left: -5px;
+        top: 0.2rem;
+    }
+}
+
+.geo-mail {
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background: url('../../src/imgs/svg/mail-icn.svg') no-repeat;
+        position: absolute;
+        width: 23px;
+        height: 18px;
+        background-position: center;
+        background-size: cover;
+        left: -2px;
+        top: 1rem;
+    }
+}
+
+.foot-block-contact a, .foot-block-contact p{
+    padding-left: 3.5rem;
+}

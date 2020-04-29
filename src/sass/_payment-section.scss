@@ -1,5 +1,4 @@
 .payment-section {
-    min-height: 80vh;
     position: relative;
     &::before{
         content: "";
@@ -15,11 +14,7 @@
 .payment-form-wrap{
     background: url('../../src/imgs/jpg/footer-formbg.jpg') no-repeat center;
     background-size: cover;
-    padding: 10rem 0 5rem;
-    form{
-        width: 80%;
-        margin: 0 auto;
-    }
+    padding: 10rem 0 4rem;
     label {
         margin-right: 5rem;
         color: white;
@@ -64,5 +59,6 @@
     font-weight: bold;
 }
 .btn--footer, input {
-    border-radius: 15px;
+    border-radius: 12px;
+    height: 6rem;
 }
