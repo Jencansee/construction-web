@@ -55,18 +55,18 @@
 }
 .advantage-sign::before {
     position: absolute;
-    content: "x";
-    font-size: $largest;
+    content: "+";
+    font-size: $enourmous;
     color: $orange;
     padding: 0 2rem;
-    top: -25%;
+    top: -10%;
     left: -18%;
 }
 
 .advantage-row {
     @include flex(unset, space-around, unset);
     b {
-        max-width: 40rem;
+        max-width: 36rem;
         margin: 2rem 0;
     }
 }

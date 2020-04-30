@@ -14,15 +14,12 @@ header {
         }
     }
 }
-
 .info-item a {
     color: inherit;
 }
-
 .call {
     text-decoration: none;
 }
-
 .info-btn {
     position: relative;
     background-color: transparent;
@@ -42,7 +39,6 @@ header {
     }
     &:hover {
         box-shadow:2px 4px 8px rgba(0, 0, 0, 0.3);
-        
         &:before{
             transform: none;
         }
