@@ -4,7 +4,7 @@ header {
 }
 .header-information {
     @include flex(row, space-between, center);
-    padding: 3rem 0;
+    padding: 2rem 0;
     font-weight: 500;
     
     .item-many {
@@ -13,6 +13,10 @@ header {
             font-size: 1.4rem;
         }
     }
+}
+.info-item {
+    display: flex;
+    align-items: center;
 }
 .info-item a {
     color: inherit;
@@ -43,4 +47,62 @@ header {
             transform: none;
         }
     }
+}
+.burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.burger span {
+    padding: 0.2rem 2rem;
+    background: black;
+    margin: 0.5rem 0rem;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.nav-links {
+    @include flex(row, center, center);
+    font-size: $regular;
+    background: white;
+    position: absolute;
+    width: 100%;
+    right:100%;
+    padding: 1.4rem;
+    transition: transform 0.8s ease-in-out;
+    li {
+        list-style: none;
+        margin-right: 10rem;
+    }
+    a, a:visited{
+        color:black;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.burger .tomato, .burger .veggie{
+    display: none;
+}
+.nav-open {
+    transform: translateX(100%);
+}
+
+.toggle span {
+    background: #cfa462;
+    margin: 0;
+    padding: 3px 2rem;
+}
+
+.toggle .line2 {
+    background: chocolate;
+}
+.toggle .tomato {
+    display: inherit;
+    background: darkred;
+}
+.toggle .veggie{
+    display: inherit;
+    background: rgb(98, 143, 30);
 }
