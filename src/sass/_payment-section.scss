@@ -1,16 +1,18 @@
-.payment-section {
+.payment-img-wrap{
     position: relative;
-    &::before{
+    z-index: 2;
+    &::before {
         content: "";
         position: absolute;
         background-image: url("../../src/imgs/svg/ellipse.svg");
-        
-        top: 1rem;
-        right: 1rem;
-        z-index: 10000;
+        width: 166px;
+        height: 89px;
+        top: -7rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
     }
 }
-
 .payment-form-wrap{
     background: url('../../src/imgs/jpg/footer-formbg.jpg') no-repeat center;
     background-size: cover;

@@ -1,3 +1,6 @@
+.contacts-content{
+    overflow: hidden;
+}
 .sub-navigation-section{
     background: $gray-bg;
     h2 {
@@ -13,28 +16,77 @@
 }
 .sub-nav-head{
     @include flex(row, space-between, center);
-    padding: 2.5rem 0 1rem;
+    padding: 2.8rem 0 1.5rem;
 }
-.contacts-text-wrap {
-    h3 {
-        text-align: center;
-        padding: 5rem 0;
-        font-size:$large;
+.download-link{
+    position: relative;
+    &:before{
+        display: block;
+        position: absolute;
+        content: "";
+        background: url('./../../src/imgs/svg/download.svg') no-repeat;
+        width: 18px;
+        height: 18px;
+        top: 50%;
+        left: -10%;
+        transform: translateY(-50%);
     }
 }
-.contact-cards-wrap {
-    @include flex(row, space-around, flex-start);
+.contacts-text-wrap {
+    display: flex;
+    h3 {
+        padding: 4rem 0;
+        font-size:$enourmous;
+    }
+
 }
-.contact-card{
-    @include flex(column, center, center);
-    margin: 6rem 0;
-    min-width: 40rem;
-    min-height: 25rem;
-    max-width: 45rem;
-    text-align: center;
-    background: linear-gradient(180deg, #ffb332 0%, #ff6501 100%);
-    h4, b {
-        color: white;
+.contacts-text-left {
+    min-width: 60%;
+}
+.contacts-txt-left-call-us{
+    padding: 2rem 0;
+    b {
+        font-size: 2.8rem;
+    }
+    
+}
+.contacts-txt-left-tel{
+    padding: 2rem 1.3rem 2rem;
+    a {
+        padding: 0rem 2rem;
+    }
+    .geo-call{
+        &::before{
+            left: -6%;
+        }
+    }
+}
+.contacts-txt-left-mail {
+    padding: 0 1.4rem;
+    .geo-mail{
+        &::before{
+            left: -5%;
+            top: 20%;
+        }
+    }
+}
+.contacts-txt-left-tel a, .contacts-txt-left-mail a {
+    padding: 0 2rem;
+}
+.contacts-text-right {
+    position: relative;
+    padding: 12rem 0;
+    color: white;
+    font-size: 2.6rem;
+    &::before{
+        z-index: -1;
+        content: "";
+        position: absolute;
+        background: url('../../src/imgs/png/vec.png') no-repeat;
+        height: 700px;
+        width: 1005px;
+        left: -20%;
+        top: 0;
     }
 }
 .contact-map-section{
@@ -43,6 +95,7 @@
 }
 .contact-map {
     text-align: center; 
+    padding-bottom: 2.6rem;
     h5{
         font-size: $large;
         padding: 2rem 0 1rem;
@@ -52,5 +105,6 @@
     }
     p {
         font-size: 2.4rem;
+        padding-bottom: 1.8rem;
     }
 }

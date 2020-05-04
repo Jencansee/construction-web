@@ -18,6 +18,10 @@ $large: 4rem;
 $big: 3rem;
 $regular: 2rem;
 
+.fnt-sz22{
+    font-size: 2.2rem;
+}
+
 @mixin flex($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
