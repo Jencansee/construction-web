@@ -83,6 +83,9 @@ a {
   text-decoration: none;
   color: black; }
 
+input[type="text"]:focus, input[type="tel"]:focus {
+  border: 3px solid #ffb332; }
+
 header {
   font-size: 3rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
@@ -90,7 +93,7 @@ header {
 .header-information {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 0;
@@ -346,16 +349,18 @@ header {
     .services-btn-wrap .btn:last-child::before {
       background: white; }
 
+.advantages-section {
+  padding: 14rem 0; }
+
 .advantages-section .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap; }
 
 .advantages-container {
-  flex: 1 1 32rem;
-  padding: 14rem 0;
+  flex: 1 1 40rem;
   margin-left: -29rem; }
 
 .form-wrap-g {
@@ -385,7 +390,7 @@ header {
     font-weight: bold; }
 
 .advantages-wrap {
-  flex: 2 2 40rem; }
+  flex: 1 1 40rem; }
   .advantages-wrap h5 {
     font-size: 4rem;
     text-align: end;
@@ -411,8 +416,9 @@ header {
   align-items: unset;
   flex-wrap: wrap; }
   .advantage-row b {
-    max-width: 36rem;
-    margin: 2rem 0; }
+    max-width: 35rem;
+    margin: 2rem 0;
+    padding: 0rem 1rem; }
 
 .fast-advantages-wrap {
   display: flex;
@@ -428,10 +434,10 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-left: 2rem;
   max-width: 30rem;
   text-align: center;
-  flex: 1 1 24rem; }
+  flex: 1 1 25rem;
+  padding: 2rem; }
 
 .gallery-section {
   background: #e5e5e5; }
@@ -727,6 +733,16 @@ header {
 .foot-block-contact a, .foot-block-contact p {
   padding-left: 3.5rem; }
 
+@media screen and (max-width: 1550px) {
+  .definition-wrapper {
+    margin: 0 2rem 0 2rem; }
+  .advantages-container {
+    margin-left: -20rem; }
+  .fast-advantage-block {
+    max-width: 25rem; }
+  .license-text b {
+    margin-right: 1rem; } }
+
 .contacts-content {
   overflow: hidden; }
 
@@ -794,7 +810,7 @@ header {
 
 .contacts-text-right {
   position: relative;
-  padding: 12rem 0;
+  padding: 14rem 0;
   color: white;
   font-size: 2.6rem; }
   .contacts-text-right::before {
@@ -804,7 +820,7 @@ header {
     background: url("../../src/imgs/png/vec.png") no-repeat;
     height: 700px;
     width: 1005px;
-    left: -20%;
+    left: -25%;
     top: 0; }
 
 .contact-map-section {

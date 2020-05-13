@@ -3,7 +3,7 @@ header {
     border-bottom: 1px solid rgba(0,0,0,.1);
 }
 .header-information {
-    @include flex(row, space-between, center);
+    @include flex(row, space-around, center);
     padding: 2rem 0;
     font-weight: 500;
     

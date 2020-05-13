@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Строительная компания «Монолит» - Построем всё!">
     <link rel="stylesheet" href="../../dist/styles/style.css">
+    <link rel="stylesheet" href="../../dist/styles/swiper.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Монолит</title>
 </head>
@@ -39,24 +40,80 @@
                 <ul class="nav-links">
                     <li><a href="../../index.html">Сделать заказ</a></li>
                     <li><a href="services.html">Наши услуги</a></li>
-                    <li><a href="#">Парк техники</a></li>
+                    <li><a href="../../index.html#gallery-container">Наши работы</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </nav>
             <section class="sub-navigation-section">
+            <div class="container">
                 <div class="sub-nav-path">
                     <a href="../../index.html">Главная</a>
                     <span>/</span>
                     <a href="#">Наши услуги</a>
                 </div>
-                
+                <div class="sub-nav-head">
+                    <h2>Наши услуги</h2>
+                </div>
+            </div> 
+            </section>
+            <section class="license-section">
+                <div class="container">
+                <div class="license-text">
+                    <div class="license-text-wrap">
+                        <b>ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</b>
+                        <p>Весь список допусков и лицензий предоставляется по обращению.</p>
+                    </div>
+                    <div class="swiper-btns-wrap">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="swpr-wrap">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../../src/imgs/jpg/license/license2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../src/imgs/jpg/license/license3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../src/imgs/jpg/license/license4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../src/imgs/jpg/license/license5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../src/imgs/jpg/license/license6.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../src/imgs/jpg/license/license.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../src/imgs/jpg/license/license3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../src/imgs/jpg/license/license4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../src/imgs/jpg/license/license2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../src/imgs/jpg/license/license6.jpg" alt="">
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
             </section>
         </main>
         <footer>
             <section class="payment-section">
                 <div class="container">
                     <div class="payment-text-wrap">
-                        <img src="./src/imgs/png/payment-img.png" alt="">
+                        <div class="payment-img-wrap">
+                            <img src="../../src/imgs/png/payment-img.png" alt="">
+                        </div>
                         <b>РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕЙ ЗАДАЧИ</b>
                         <p>Получите бесплатную консультацию <br> по плану работ с расчетом цены</p>
                     </div>
@@ -97,7 +154,7 @@
                         <ul>
                             <li><a href="../../index.html">Сделать заказ</a></li>
                             <li><a href="services.html">Наши услуги</a></li>
-                            <li><a href="#">Парк техники</a></li>
+                            <li><a href="../../index.html#gallery-container">Наши работы</a></li>
                             <li><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
@@ -119,6 +176,19 @@
         </div>
         </footer>
         </div>
+        <script src="../../node_modules/swiper/js/swiper.min.js"></script>
         <script src="../scripts/burger.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 8,
+              spaceBetween: 40,
+              slidesPerGroup: 3,
+              loop: true,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+          </script>
     </body>
 </html>
