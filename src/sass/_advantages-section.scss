@@ -1,18 +1,19 @@
 .advantages-section{
-    padding: 14rem 0;
+    padding: 10rem 0;
 }
 .advantages-section .container{
     @include flex(row, center, flex-start);
 }
 
 .advantages-container {
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
     margin-left: -29rem;
 }
 
 .form-wrap-g {
     background: url('../../src/imgs/jpg/advantages-formBG1.jpg') no-repeat;
-    background-position: cover;
+    background-position: center;
+    background-size: cover;
     width: 76rem;
     height: 76rem;
 }
@@ -44,7 +45,7 @@
 }
 
 .advantages-wrap {
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
     h5 {
         font-size: $large;
         text-align: end;

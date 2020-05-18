@@ -5,13 +5,12 @@
 }
 .question-img{
     flex: 1 1 40rem;
-    min-width: 72rem;
+    max-width: 68rem;
     margin-top: -10rem;
-    margin-right: 12rem;
 }
 .question-form {
     @include flex(column, center, unset);
-    flex: 1 1 40rem;
+    flex: 1 1 38rem;
     p {
         padding: 2rem 0;
     }
