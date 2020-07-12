@@ -33,6 +33,22 @@
         }
     }
 
+    //burger
+    .nav-links{
+        width: 80%;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: initial;
+
+        li {
+            margin: 2rem 0;
+        }
+        
+        li:nth-child(1){
+            margin-top: 6rem;
+        }   
+     }
+
     .intro-section{
         padding: 1rem 2rem;
         h2{

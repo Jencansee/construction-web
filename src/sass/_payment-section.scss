@@ -26,12 +26,12 @@
     }
 }
 .payment-section form {
-    @include flex(row, center, center);
+    @include flex(row, space-evenly, center);
 }
 
 .payment-text-wrap {
     @include flex(column, center, center);
-    b {
+    h6 {
         font-size: $big;
         position: relative;
         &::before{

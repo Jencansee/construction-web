@@ -30,7 +30,7 @@
                     <a href="#" class="sub-call">Закажите обратный звонок</a>
                 </div>
                 <div class="info-item call-btn--hidden">
-                    <a href="#" href="tel:+77015960331"><img src="./src/imgs/svg/callForm.svg" alt="Позвоните нам!" style="filter: invert();"></a>
+                    <a href="tel:+77015960331"><img src="./src/imgs/svg/callForm.svg" alt="Позвоните нам!" style="filter: invert();"></a>
                 </div>
                 <div class="info-item">
                     <button class='btn info-btn'>Онлайн-заказ</button>
@@ -48,18 +48,21 @@
                 </ul>
             </nav>
             <section class="intro-section">
-            <div class="container">
-                <h2>Земляные и <br /> демонтажные работы в <br /> Карагандинской области</h2>
-            <div class="intro-form--wrapper">
-                <p>Проконсультируйте по стоимости со специалистом бесплатно:</p>
-                <form action="POST" class="form">
-                    <input type="text" name="name" id="name" placeholder="Евгений Сидоров" title="Введите ваше имя" required>
-                    <input type="tel" name="phone_num" id="phone_num" placeholder="+7 (778) 542 78 28"  title="Введите ваш контактный номер телефона" required/>
-                   <button class="btn btn--intro">
-                    <img src="./src/imgs/svg/callForm.svg" alt="">   
-                    Заказать звонок</button>
+                <div class="container">
+                    <h2>Земляные и <br /> демонтажные работы в <br /> Карагандинской области</h2>
+                <div class="intro-form--wrapper">
+                    <p>Проконсультируйте по стоимости со специалистом бесплатно:</p>
+                    <form action="POST" class="form">
+                        <label class="label--non-visual" for="intro-client-name">Введите ваше имя</label>
+                        <input type="text" name="client-name" id="intro-client-name" placeholder="Евгений Сидоров" title="Введите ваше имя" required />
+                        <label class="label--non-visual" for="intro-phone-number">Введите ваш контактный номер телефона</label>
+                        <input type="tel" name="phone-number" id="intro-phone-number" placeholder="+7 (778) 542 78 28"  title="Введите ваш контактный номер телефона" required/>
+                        <button class="btn btn--intro">
+                            <img src="./src/imgs/svg/callForm.svg" alt="">   
+                            Заказать звонок
+                        </button>
+                    </form>
                 </div>
-                </form>
                 </div>
             </section>
         <section class="company-section">
@@ -207,13 +210,11 @@
                         <b>Ваш заказ будет выполнен успешно</b>
                         <p>Оставьте свои контакты и мы перезвоним вам в течении нескольких минут в рабочее время</p>
                             <form action="POST">
-                                <label for="client-name">
-                                    <p>Ваше имя</p>
-                                    <input id="client-name" type="text" name="client-name" placeholder="Филип Дик" required>
+                                <label for="advantages-client-name">Ваше имя
+                                    <input id="advantages-client-name" type="text" name="advantages-client-name" placeholder="Филип Дик" required>
                                 </label>
-                                <label for="client-tel">
-                                    <p>Контактный номер телефона</p>
-                                    <input id="client-tel" type="text" name="client-tel" placeholder="+7 (702) 000-00-54" required>
+                                <label for="advantages-client-tel">Контактный номер телефона
+                                    <input id="advantages-client-tel" type="text" name="advantages-client-tel" placeholder="+7 (702) 000-00-54" required>
                                 </label>
                                 <button class="btn  btn--intro">
                                     <img src="./src/imgs/svg/callForm.svg" alt="">
@@ -326,17 +327,13 @@
             <div class="container">
             <img class="question-img" src="./src/imgs/png/question-sec2.png" alt="">
             <div class="question-form">
-                <b>НА ВАШИ ВОПРОСЫ <br> ОТВЕТИТ СПЕЦИАЛИСТ</b>
+                <h6>НА ВАШИ ВОПРОСЫ <br> ОТВЕТИТ СПЕЦИАЛИСТ</h6>
                 <p>Оставьте свои контакты и мы перезвоним вам <br> в течении нескольких минут в рабочее время</p>
-                <form action="POST">
-                    <label for="client-name">
-                        <p>Ваше имя</p>
-                        <input id="client-name" type="text" name="client-name" placeholder="Валерий Номаконов" required>
-                    </label>
-                    <label for="client-tel">
-                        <p>Контактный номер телефона</p>
-                        <input id="client-tel" type="text" name="client-tel" placeholder="+7 (708) 000-00-10" required>
-                    </label>
+                <form action="POST" class="question__form">
+                    <label for="questions-client-name">Ваше имя</label>
+                    <input id="questions-client-name" type="text" name="client-name" placeholder="Валерий Номаконов" required>
+                    <label for="questions-client-tel">Контактный номер телефона</label>
+                    <input id="questions-client-tel" type="text" name="client-tel" placeholder="+7 (708) 000-00-10" required>
                     <button class="btn  btn--intro">
                         <img src="./src/imgs/svg/callForm.svg" alt="">
                         Перезвоните мне</button>
@@ -348,7 +345,7 @@
             <div class="container">
             <div class="license-text">
                 <div class="license-text-wrap">
-                    <b>ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</b>
+                    <h6>ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</h6>
                     <p>Весь список допусков и лицензий предоставляется по обращению.</p>
                 </div>
                 <div class="swiper-btns-wrap">
@@ -402,24 +399,21 @@
                         <div class="payment-img-wrap">
                             <img src="./src/imgs/png/payment-img.png" alt="">
                         </div>
-                        <b>РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕЙ ЗАДАЧИ</b>
+                        <h6>РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕЙ ЗАДАЧИ</h6>
                         <p>Получите бесплатную консультацию <br> по плану работ с расчетом цены</p>
                     </div>
                 </div>
                 <div class="payment-form-wrap">
                     <div class="container">
                         <form action="POST">
-                        <label for="payment-client-name">
-                            <p>Ваше имя</p>
-                            <input id="payment-client-name" type="text" name="client-name" placeholder="Ваше имя" required>
-                        </label>
-                        <label for="payment-client-tel">
-                            <p>Контактный номер телефона</p>
-                            <input id="payment-client-tel" type="text" name="client-tel" placeholder="Ваш номер телефона" required>
-                        </label>
+                        <label class="label--non-visual" for="payment-client-name">Ваше имя</label>
+                        <input id="payment-client-name" type="text" name="client-name" placeholder="Ваше имя" required>
+                        <label class="label--non-visual" for="payment-client-tel">Контактный номер телефона</label>
+                        <input id="payment-client-tel" type="text" name="client-tel" placeholder="Ваш номер телефона" required>
                         <button class="btn  btn--intro btn--footer">
                             <img src="./src/imgs/svg/callForm-foot.svg" alt="">
-                            Узнать стоимость</button>
+                            Узнать стоимость
+                        </button>
                         </form>
                     </div>
                 </div>

@@ -37,6 +37,9 @@ input {
   width: 100%;
   margin: 0 auto; }
 
+.label--non-visual {
+  display: none; }
+
 .intro-section {
   background: linear-gradient(180deg, white, rgba(209, 160, 54, 0.7) 32.74%, rgba(233, 155, 11, 0.486) 100%), url("../../src/imgs/sc.png") no-repeat;
   background-position: center;
@@ -384,8 +387,8 @@ header {
     text-transform: uppercase;
     text-align: center;
     font-size: 4rem; }
-  .form-wrap p {
-    padding: 1.5rem 0 1.5rem 0; }
+  .form-wrap p, .form-wrap label {
+    margin: 1.5rem 0 1.5rem 0; }
   .form-wrap button {
     width: 100%;
     border: 1px solid white; }
@@ -393,7 +396,7 @@ header {
     width: 100%;
     margin: 1rem 0;
     padding-left: 2rem; }
-  .form-wrap label p {
+  .form-wrap label {
     font-weight: bold; }
 
 .advantages-wrap {
@@ -504,7 +507,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   padding: 8rem 0 6rem; }
-  .license-text b {
+  .license-text h6 {
     background: #ff6501;
     color: white;
     font-size: 3rem;
@@ -570,13 +573,17 @@ header {
   align-items: unset;
   flex-wrap: wrap;
   flex: 1 1 38rem; }
-  .question-form p {
-    padding: 2rem 0; }
-  .question-form b {
+  .question-form p, .question-form label {
+    margin: 1rem 0; }
+  .question-form h6 {
     font-size: 3rem;
     margin-top: 2rem; }
   .question-form button {
     margin: 2rem 0; }
+
+.question__form {
+  display: flex;
+  flex-direction: column; }
 
 .swiper-slide {
   flex: 1 0 18rem; }
@@ -608,7 +615,7 @@ header {
 .payment-section form {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap; }
 
@@ -618,10 +625,10 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
-  .payment-text-wrap b {
+  .payment-text-wrap h6 {
     font-size: 3rem;
     position: relative; }
-    .payment-text-wrap b::before {
+    .payment-text-wrap h6::before {
       position: absolute;
       content: "";
       width: 58rem;
@@ -857,6 +864,15 @@ header {
   .info-item p {
     margin-right: 2rem;
     font-size: 3.5rem; }
+  .nav-links {
+    width: 80%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: initial; }
+    .nav-links li {
+      margin: 2rem 0; }
+    .nav-links li:nth-child(1) {
+      margin-top: 6rem; }
   .intro-section {
     padding: 1rem 2rem; }
     .intro-section h2 {

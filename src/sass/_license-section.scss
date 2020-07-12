@@ -4,7 +4,7 @@
 .license-text{
   @include flex(row, space-between, center);
   padding: 8rem 0 6rem;
-  b {
+  h6 {
     background: $orange;
     color: white;
     font-size: 3rem;

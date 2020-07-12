@@ -11,10 +11,10 @@
 .question-form {
     @include flex(column, center, unset);
     flex: 1 1 38rem;
-    p {
-        padding: 2rem 0;
+    p, label {
+        margin: 1rem 0;
     }
-    b {
+    h6 {
         font-size: $big;
         margin-top: 2rem;
     }
@@ -22,6 +22,12 @@
         margin: 2rem 0;
     }
 }
+
+.question__form {
+    display: flex;
+    flex-direction: column;
+}
+
 .swiper-slide {
     flex: 1 0 18rem;
 }
