@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   box-sizing: border-box; }
 
@@ -27,7 +26,7 @@ input {
   font-family: inherit;
   padding: 1.5rem 4rem;
   width: 35rem;
-  width: 30%;
+  width: 50%;
   font-size: 2.2rem; }
 
 .full-wrapper {
@@ -37,31 +36,13 @@ input {
 .container {
   max-width: 1340px;
   width: 100%;
-  margin: 0 auto; }
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
 
 .label--non-visual {
   display: none; }
-
-.intro-section {
-  background: linear-gradient(180deg, white, rgba(209, 160, 54, 0.7) 32.74%, rgba(233, 155, 11, 0.486) 100%), url("../../src/imgs/sc.png") no-repeat;
-  background-position: center;
-  background-size: cover; }
-  .intro-section h2 {
-    font-size: 6rem;
-    text-align: center;
-    padding-top: 8rem;
-    text-transform: uppercase; }
-
-.intro-form--wrapper {
-  font-size: 3rem;
-  text-align: center; }
-  .intro-form--wrapper p {
-    padding: 8rem 0 4rem; }
-  .intro-form--wrapper button, .intro-form--wrapper input {
-    border-radius: 15px;
-    text-align: center; }
-  .intro-form--wrapper input {
-    border: 2px solid #ff6501; }
 
 .form {
   display: flex;
@@ -93,6 +74,60 @@ a {
 
 input[type="text"]:focus, input[type="tel"]:focus {
   border: 3px solid #ffb332; }
+
+.hero-section {
+  position: relative;
+  font-family: 'Play', sans-serif;
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+
+.hero-container {
+  display: flex;
+  height: 90%; }
+
+.hero__bg-font {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  font-size: 18rem;
+  font-weight: bold;
+  opacity: 0.9; }
+
+.hero__image {
+  height: 100%;
+  background-image: linear-gradient(180deg, white, rgba(136, 115, 93, 0.25) 32.74%, rgba(236, 162, 27, 0.49) 100%), url("/src/imgs/demoliton.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  min-width: 50%;
+  margin-left: -180px; }
+
+.hero__info {
+  margin-left: 160px; }
+  .hero__info .btn::before {
+    background: #b22222; }
+
+.hero__label {
+  font-size: 28rem;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  margin-left: -20px; }
+  .hero__label span {
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    left: 270px;
+    right: 0;
+    color: firebrick; }
+
+.hero__header {
+  font-size: 4rem;
+  line-height: 1.3;
+  margin: 20px 0; }
 
 header {
   font-size: 3rem;
@@ -212,8 +247,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  padding-bottom: 12rem;
-  margin-top: -6.8rem; }
+  margin-bottom: 12rem; }
 
 .counter {
   position: relative;
@@ -221,8 +255,7 @@ header {
   padding: 5rem;
   font-size: 2.6rem;
   font-weight: 600;
-  color: white;
-  /* получите услуги от лучшей / признанной компнанией по демонтажу */ }
+  color: white; }
   .counter b {
     font-size: 5rem; }
   .counter p {
@@ -237,30 +270,33 @@ header {
     left: 50%;
     transform: translate(-50%, -50%); }
 
-.definition-wrapper {
+.definition-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; }
-
-.definition-list {
-  flex: 2 0 30rem; }
-  .definition-list h3 {
-    font-size: 4rem; }
-  .definition-list b {
-    font-size: 2.2rem; }
-  .definition-list .btn {
-    margin: 5rem 10rem; }
+  align-items: center; }
 
 .definition-block {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap; }
-  .definition-block p {
-    padding-top: 0.6rem; }
+  margin-bottom: 3rem; }
+
+.definition-block__icon-wrap {
+  height: 5rem;
+  min-width: 5.5rem;
+  margin-right: 2rem; }
+
+.definition-block__icon {
+  width: 5rem; }
+
+.definition-block__title {
+  font-weight: 600;
+  font-size: 2.1rem; }
+
+.definition-block__description, .definition-block__title {
+  line-height: 1.6; }
+
+.definition-text h3 {
+  font-size: 4rem; }
 
 .definition-img {
   flex: 1 1 50rem; }

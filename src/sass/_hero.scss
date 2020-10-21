@@ -1,0 +1,70 @@
+
+.hero-section {
+    position: relative;
+    font-family: 'Play', sans-serif;
+    height: 100vh;
+
+
+    //background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(209, 160, 54, 0.7) 32.74%, rgba(233, 155, 11, 0.486) 100%), url('../../src/imgs/sc.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.hero-container {
+    display: flex; height: 90%;
+}
+
+.hero__bg-font {
+    position: absolute;   
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    font-size: 18rem;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.hero__image {
+    height: 100%;
+    background-image: linear-gradient(180deg, white, rgba(136, 115, 93, 0.25) 32.74%, rgba(236, 162, 27, 0.49) 100%), url("/src/imgs/demoliton.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    min-width: 50%;
+    margin-left: -180px;
+}
+
+
+.hero__info {
+    margin-left: 160px;
+
+    .btn { 
+        &::before {
+            background: #b22222;
+        }
+    }
+}
+.hero__label {
+    font-size: 28rem;
+    letter-spacing: 1rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    margin-left: -20px;
+    span {
+        z-index: -1;
+        position: absolute;
+        top: 50px;
+        left: 270px;
+        right: 0;        
+        color: firebrick;
+    }
+}
+
+.hero__header {
+    font-size: 4rem;
+    line-height: 1.3;
+    
+    margin: 20px 0;
+}

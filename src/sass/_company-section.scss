@@ -1,8 +1,7 @@
 .counter-wrapper {
     @include flex(row, space-evenly, center);
     text-align: center;
-    padding-bottom: 12rem;
-    margin-top: -6.8rem;
+    margin-bottom: 12rem;
 }
 
 .counter {
@@ -17,8 +16,6 @@
         font-size: 5rem;
     }
          
-
-    /* получите услуги от лучшей / признанной компнанией по демонтажу */
     p {
         padding-top: 2rem;
     }
@@ -36,30 +33,20 @@
 }
 
 
-.definition-wrapper {
-    @include flex(row, space-between, center);
+.definition-container { display: flex; justify-content: space-between; align-items: center; }
 
+.definition-block { display: flex;  align-items: center; margin-bottom: 3rem; }
+.definition-block__icon-wrap { height: 5rem; min-width: 5.5rem; margin-right: 2rem; }
+.definition-block__icon { width: 5rem; }
+
+.definition-block__title { font-weight: 600; font-size: 2.1rem; }
+.definition-block__description, .definition-block__title { line-height: 1.6; }
+
+
+.definition-text {
+    h3 { font-size: 4rem; }
 }
 
-.definition-list {
-    flex: 2 0 30rem;
-    h3 {
-        font-size: 4rem;
-    }
-    b {
-        font-size: 2.2rem;
-    }
-    .btn {
-        margin: 5rem 10rem;
-    }
-}
-
-.definition-block {
-    @include flex(row, flex-start, center);
-        p {
-        padding-top: 0.6rem;
-        }
-}
 .definition-img {
     flex: 1 1 50rem;
     img {
