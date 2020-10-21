@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Строительная компания «Монолит» - Построем всё!">
     <link rel="stylesheet" href="../../dist/styles/style.css">
+    <link rel="stylesheet" href="../../dist/styles/swiper.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Монолит</title>
 </head>
@@ -97,26 +98,23 @@
                 <div class="container">
                     <div class="payment-text-wrap">
                         <div class="payment-img-wrap">
-                            <img src="./../../src/imgs/png/payment-img.png" alt="">
+                            <img src="../imgs/png/payment-img.png" alt="">
                         </div>
-                        <b>РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕЙ ЗАДАЧИ</b>
+                        <h6>РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕЙ ЗАДАЧИ</h6>
                         <p>Получите бесплатную консультацию <br> по плану работ с расчетом цены</p>
                     </div>
                 </div>
                 <div class="payment-form-wrap">
                     <div class="container">
                         <form action="POST">
-                        <label for="payment-client-name">
-                            <p>Ваше имя</p>
-                            <input id="payment-client-name" type="text" name="client-name" placeholder="Ваше имя" required>
-                        </label>
-                        <label for="payment-client-tel">
-                            <p>Контактный номер телефона</p>
-                            <input id="payment-client-tel" type="text" name="client-tel" placeholder="Ваш номер телефона" required>
-                        </label>
+                        <label class="label--non-visual" for="payment-client-name">Ваше имя</label>
+                        <input id="payment-client-name" type="text" name="client-name" placeholder="Ваше имя" required>
+                        <label class="label--non-visual" for="payment-client-tel">Контактный номер телефона</label>
+                        <input id="payment-client-tel" type="text" name="client-tel" placeholder="Ваш номер телефона" required>
                         <button class="btn  btn--intro btn--footer">
                             <img src="./src/imgs/svg/callForm-foot.svg" alt="">
-                            Узнать стоимость</button>
+                            Узнать стоимость
+                        </button>
                         </form>
                     </div>
                 </div>
@@ -132,14 +130,15 @@
                     <a href="#" class="small-link">Политика конфиденциальности</a>
                     <a href="#" class="small-link">Скачать прайслист в формате Excel</a>
                 </div>
+                
                 <div class="footer-block">
                     <b>НАВИГАЦИЯ</b>
                     <nav class="footer-nav">
                         <ul>
-                            <li><a href="../../index.html">Сделать заказ</a></li>
-                            <li><a href="services.html">Наши услуги</a></li>
-                            <li><a href="../../index.html#gallery-container">Наши работы</a></li>
-                            <li><a href="contacts.html">Контакты</a></li>
+                            <li><a href="#">Сделать заказ</a></li>
+                            <li><a href="./src/html/services.html">Наши услуги</a></li>
+                            <li><a href="#gallery-container">Наши работы</a></li>
+                            <li><a href="./src/html/contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -161,5 +160,6 @@
         </footer>
         </div>
         <script src="../scripts/burger.js"></script>
+        <script src="../scripts/swiper-start.js"></script>
     </body>
 </html>

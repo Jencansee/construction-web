@@ -1,7 +1,8 @@
 .counter-wrapper {
-    @include flex(row, space-around, center);
+    @include flex(row, space-evenly, center);
     text-align: center;
     padding-bottom: 12rem;
+    margin-top: -6.8rem;
 }
 
 .counter {
@@ -9,26 +10,28 @@
     background: linear-gradient(180deg, #ffb332 0%, #ff6501 100%);;
     padding: 5rem;
     font-size: 2.6rem;
-    font-weight: 600;
-    margin-top: -6.8rem;
+    font-weight: 600;    
     color:white;
 
     b {
         font-size: 5rem;
-        &::before{
-            position: absolute;
-            content: "";
-            width: 65px;
-            height: 3px;
-            background: white;
-            bottom: 128px;
-            left: 50%;
-            transform: translateX(-48%);
-        }
     }
+         
 
+    /* получите услуги от лучшей / признанной компнанией по демонтажу */
     p {
         padding-top: 2rem;
+    }
+
+    &::before{
+        position: absolute;
+        content: "";
+        width: 6.5rem;
+        height: 0.4rem;
+        background: white;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 

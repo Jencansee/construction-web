@@ -33,11 +33,147 @@
                     <a href="tel:+77015960331"><img src="./src/imgs/svg/callForm.svg" alt="Позвоните нам!" style="filter: invert();"></a>
                 </div>
                 <div class="info-item">
-                    <button class='btn info-btn'>Онлайн-заказ</button>
+                    <button class='btn info-btn' id='modal-trigger'>Онлайн-заказ</button>
                 </div>
             </div>
         </div>
         </header>
+        <div class="modal modal-show" id="modal">
+            <div class="modal-window">
+
+                
+                <h2>Спасибо</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim tenetur mollitia ipsa officia perspiciatis adipisci.</p>
+                <p>Мы скоро с вами свяжемся!</p>
+                <div class="r30"></div>
+                <button id="modal-btn-close" class="btn">Закрыть</button>
+            </div>
+        </div>
+
+
+        <style>
+            .modal-shadow { background-color: rgba(0,0,0,0.8); position: fixed; top: 0; width: 100%; height: 100%; z-index: 999999; }
+            .modal-shadow_hidden { display: none; }
+        
+            .modal-thanks-you { 
+                display: flex;
+                justify-content: center;
+                width: 580px;            
+                margin: 0 auto;
+                margin-top: 10vw; 
+                transition: .3s; }    
+            
+            .modal-thanks-you__content { width: 570px; border-radius: 2%; overflow: hidden; }
+            
+            .modal-close-btn { position: absolute; top: 10%; right: 26%; }    
+            
+            .modal__info {
+                background-image: url('/git/img/blocks/modal/bg-modal.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: #524DD2;
+            }
+            
+            /*socials btns*/
+            .modal__socials { display: flex; }
+            .modal__social-box { height: 130px; width: 100%; display:flex; flex-direction: column; justify-content: center; align-items: center; }
+            
+            .social__icon { width: 4rem; height: 4rem; margin-bottom: 1.5rem; }
+            .social__label { font-weight: 500; line-height: 26px; color: #FFF; }
+            .social_telegram { background-color: #0087CB; }
+            .social_wapp { background-color: #25D366; }            
+            .social_imsg { background-color: #0083FE; }
+        
+        
+            /*contacts*/
+            .modal__contacts { height: 170px; display: flex; align-items: center; }
+            .contacts { display: flex; justify-content: space-between; align-items: center; padding: 0 50px; width: 100%; }
+        
+            .contacts__text { font-weight: 400; line-height: 26px; } 
+            .contacts__text-head { font-size: 20px; color: #818A9F; margin-bottom: 15px;   color: rgba(255, 255, 255, 0.6); }
+            .contacts__text-phone { font-size: 39px; line-height: 41px; color: #fff;}
+            
+            .contacts__icon-wrap { background-color: #524DD2; border-radius: 25%; min-width: 55px; height: 55px; display: flex; justify-content: center; align-items: center;
+            
+            background-color: #3B36B8;
+            }
+            .contacts__icon { height: 25px; width: 25px; }
+        
+            /* modal__header */
+            .modal__main { color: #ffffff; padding: 40px; }
+            .modal__head { font-size: 48px; font-weight: 500; line-height: 55px; }
+            .modal__description { font-size: 20px; font-weight: 300; line-height: 28px; }
+        
+        
+            @media (max-width: 550px) {
+                .modal-thanks-you { width: 90%; }
+                .modal__main { padding: 20px; }
+                .modal-contacts { height: 160px; }
+                .contacts { padding: 0; justify-content: center; }
+                .contacts__icon-wrap { display: none; }
+                .modal-close-btn { top: 7%; right: 10%; }
+            }
+        </style>
+        
+        
+        
+        <div class="modal-shadow modal-shadow_hidden" id="modal-shadow">
+            <div class="modal-thanks-you">
+                <div class="modal-thanks-you__content">
+        
+                    <div class="modal__info">
+                        <div class="modal__main">
+                            <div class="modal__head">
+                                Спасибо, <br> Ваша заявка <br> принята!
+                            </div>
+                            <div class="r30"></div>
+                            <div class="modal__description">
+                                Мы свяжемся с Вами в ближайшее время в рабочие часы с 9 до 18 часов
+                            </div>
+                        </div>
+        
+                        <div class="r1" style="background-color: #433EC0;"></div>
+                        <div class="r1" style="background-color: #605BE1;"></div>
+        
+                        <div class="modal__contacts">
+                            <div class="contacts">
+                                <div class="contacts__text">
+                                    <div class="contacts__text-head">Звоните, наш телефон</div>
+                                    <a href="tel:77071270001" class="contacts__text-phone">+7 (707) 127-00-01</a>
+                                </div>
+                                <div class="contacts__icon-wrap">
+                                    <img class="contacts__icon" src="/src/imgs/svg/callForm.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="modal__socials">
+                        <a href="#" class="modal__social-box social_wapp">
+                            <img class="social__icon" src="/src/imgs/svg/socials/wapp.svg" alt="" loading="lazy">
+                            <div class="social__label">WhatsApp</div>
+                        </a>
+                        <a href="#" class="modal__social-box social_telegram">
+                            <img class="social__icon" src="/src/imgs/svg/socials/telegram.svg" alt="" loading="lazy">
+                            <div class="social__label">Telegram</div>
+                        </a>
+                        <a href="#" class="modal__social-box social_imsg">
+                            <img class="social__icon" src="/src/imgs/svg/socials/email.svg" alt="" loading="lazy">
+                            <div class="social__label">E-mail</div>
+                        </a>
+                    </div>            
+                </div>
+                <div class="modal-close-btn" onclick="openModal()">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.0325 2.59095L26.468 0.00201416L14.5182 12.0508L2.56903 0.00201416L0.00390625 2.59095L11.9519 14.6385L0.00390625 26.6861L2.57205 29.2719L14.5182 17.2262L26.4644 29.2719L29.0325 26.6861L17.0846 14.6385L29.0325 2.59095Z" fill="white"/>
+                    </svg>                    
+                </div>
+            </div>
+        </div>
+        
+
+
+
         <main>
             <nav class="header-nav">
                 <ul class="nav-links">
@@ -69,15 +205,15 @@
             <div class="container">
                 <div class="counter-wrapper">
                     <div class="counter">
-                <b class="counter-quantity">183</b>
+                <b class="counter-quantity" data-target="210">0</b>
                 <p>ЗДАНИЙ <br/>РАЗРУШЕНО</p>
                     </div>
                     <div class="counter">
-                <b class="counter-quantity">274</b>
+                <b class="counter-quantity" data-target="304">0</b>
                 <p>КОТЛОВАНОВ <br/>ВЫРЫТО</p>
                     </div>
                     <div class="counter">
-                <b class="counter-quantity">459</b>
+                <b class="counter-quantity" data-target="514">0</b>
                 <p>ЗАКАЗОВ <br/>ВЫПОЛНЕННО</p>
                     </div>
                </div> 
@@ -197,7 +333,7 @@
                 </div>
             </div>
                 <div class="services-btn-wrap">
-                    <button class='btn info-btn'>Ко всем услугам</button>
+                    <a href="./src/html/services.html" class='btn info-btn'>Ко всем услугам</a>
                     <button class='btn info-btn'>Список техники</button>
                 </div>
             </div>
@@ -459,18 +595,9 @@
         </footer>
         <script src="./node_modules/swiper/js/swiper.min.js"></script>
         <script src="./src/scripts/burger.js"></script>
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-              slidesPerView: 8,
-              spaceBetween: 40,
-              slidesPerGroup: 3,
-              loop: true,
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
-            });
-          </script>
+        <script src="./src/scripts/swiper-start.js"></script>
+        <script src="./src/scripts/modal.js"></script>
+        <script src="/src/scripts/counterAnimate.js"></script>
     </div>
     </body>
 </html>

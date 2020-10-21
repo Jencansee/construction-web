@@ -62,7 +62,7 @@
             justify-content: center;
             
             input, button {
-                width: 40rem;
+                width: 50%;
                 margin: 1rem 0;
             }
         }
@@ -143,6 +143,23 @@
             padding-top: 6rem;
         }
     }
+}
 
-    
+@media screen and (max-width: 500px) {
+    .intro-section {
+        h2 {
+            font-size: 3.5rem;
+        }
+    }
+
+    h5 {
+        // временно
+        font-size: 3rem;
+    }
+
+    h6 {
+        &::before {
+            position: unset;
+        }
+    }
 }
