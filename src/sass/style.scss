@@ -13,7 +13,7 @@ html {
 
 $yellow: #ffb332;
 $orange: #ff6501;
-$gray-bg: #e5e5e5;
+$gray-bg: #e3e3e3;
 
 $enourmous: 6rem;
 $largest: 5rem;
@@ -47,3 +47,5 @@ $regular: 2rem;
 @import 'adaptive';
 @import './utilities/utilities';
 @import './utilities/r';
+
+@import './utilities/title';

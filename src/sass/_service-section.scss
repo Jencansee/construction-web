@@ -1,49 +1,50 @@
 .service-section {
     background: $gray-bg;
-    
-    h4 {
-        font-size: $large;
-        text-align: center;
-        padding: 5rem 0 2rem 0;
-    }
-
-    .services-wrap {
-        @include flex(row, center, none);
-    }
+    text-align: center;
 }
 
-.service-block {
-    @include flex(column, center, center);
-    max-width: 39rem;
-    text-align: center;
-    padding: 7rem 5rem;
+.services { display: flex; flex-wrap: wrap; }
+
+.service__block {
+    display: flex; flex-direction: column; justify-content: space-between; align-items: center;
+    width: 33.33%;
+    padding: 6rem 5rem;
     font-size: 1.6rem;
-    transition: all ease-in-out 0.6s;
-    a {
-        font-size: 2.6rem;
-        font-weight: bold;
-        padding: 2.5rem 0 2rem 0;
-        color: black;
-
-        text-decoration: none;
-
-        &:hover {
-            color: $orange;
-            transition: all ease-in-out 0.4s;
-        }
-    }
+    transition: all ease-in-out 0.4s;
 
     &:hover {
-        background: lighten($color: $gray-bg, $amount: 15)
+        background: lighten($color: $gray-bg, $amount: 15);
+        .service__title {
+            color: $orange;
+        }
     }
 }
 
-.service-block-description {
-    margin: 1rem;
+.service__title { font-size: 2.6rem; font-weight: bold; color: black; transition: all ease-in-out 0.4s; }    
+.service__description { margin: 2.5rem 0; }
+
+.service__img {
+    height: 22rem; width: 22rem; position: relative; margin-bottom: 5rem;
+    background-repeat: no-repeat; background-position: center;
 }
 
-.service-btn {
-    margin: 4rem 0 0 0;
+.service__img-tech { position: absolute; bottom: -4rem; left: 0; }
+
+/*backgrounds*/
+.service__img_unit1 { background-image: url('../../src/imgs/png/services-bg4.png'); }
+.service__img_unit2 { background-image: url('../../src/imgs/png/services-bg5.png'); }
+.service__img_unit3 { background-image: url('../../src/imgs/png/services-bg3.png'); }
+.service__img_unit4 { background-image: url('../../src/imgs/png/services-bg2.png'); }
+.service__img_unit5 { background-image: url('../../src/imgs/png/services-bg1.png'); }
+.service__img_unit6 { background-image: url('../../src/imgs/png/services-bg6.png'); }
+
+
+
+
+
+
+
+.service-btn {    
     background: white;
     color: black;
     font-size: 1.8rem;
@@ -55,42 +56,9 @@
         box-shadow:2px 4px 8px rgba(0, 0, 0, 0.3);
     }
 }
-
-.service-block-img {
-    position: relative;
-}
-.service-block-img img:last-child {
-    position: absolute;
-}
-.service-img-tech1{
-    top: -4%;
-    right: 4%;
-}
-.service-img-tech2 {
-    top: 32%;
-    right: -15%;
-}
-.service-img-tech3 {
-    top: 26%;
-    left: -14%;
-}
-.service-img-tech4 {
-    top: 30%;
-    right: -11%;
-}
-.service-img-tech5 {
-    top: 0;
-    right: 0;
-}
-.service-img-tech6 {
-    left: -10%;
-    top: 4%;
-}
-
 .services-btn-wrap {
     z-index: 4;
-    position: relative;
-    text-align: center;
+    position: relative;    
     .btn {
         margin: 2rem 3rem;
         padding: 2rem 8rem;
